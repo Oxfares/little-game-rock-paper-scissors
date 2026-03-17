@@ -8,7 +8,8 @@ function getComputerChoice() {
 		return "rock";
 	}
 }
-
+let humanScore = Number;
+let computerScore = Number;
 function gethumanChoice() {
 	let choice = prompt("Rnter your choice (rock, paper, scissors):");
 	return choice.toLowerCase();
@@ -95,5 +96,6 @@ resultsDiv.appendChild(scoreDisplay);
 resultsDiv.appendChild(winnerDisplay);
 container.appendChild(resultsDiv);
 
-let humanScore = 0;
-let computerScore = 0;
+button1.textContent = "Rock";
+button2.textContent = "Paper";
+button3.textContent = "Scissors";
