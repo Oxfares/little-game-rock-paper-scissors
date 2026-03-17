@@ -9,10 +9,10 @@ function getComputerChoice() {
 		return "rock";
 	}
 }
-let humanScore = Number;
-let computerScore = Number;
+let hscore = 0;
+let cscore = 0;
 function gethumanChoice() {
-	let choice = prompt("Rnter your choice (rock, paper, scissors):");
+	let choice = prompt("Enter your choice (rock, paper, scissors):");
 	return choice.toLowerCase();
 }
 
@@ -74,15 +74,15 @@ function game() {
 }
 
 // --------------------
-const container = document.querySelector("#container");
+const container = document.querySelector(".container");
 const button1 = document.createElement("button");
 const button2 = document.createElement("button");
 const button3 = document.createElement("button");
 
-button1.addEventListener("click", () => playround(rock, getComputerChoice()));
-button2.addEventListener("click", () => playround(paper, getComputerChoice()));
+button1.addEventListener("click", () => playround("rock", getComputerChoice()));
+button2.addEventListener("click", () => playround("paper", getComputerChoice()));
 button3.addEventListener("click", () =>
-	playround(scissors, getComputerChoice()),
+	playround("scissors", getComputerChoice()),
 );
 
 const resultsDiv = document.createElement("div");
